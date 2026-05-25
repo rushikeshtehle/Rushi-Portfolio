@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background-color: rgb(0,0,33);
+            color:white;
+            font-family: Arial;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            height:70px;
+            background-color: rgb(18,18,62);
+        }
+
+        nav ul{
+            display:flex;
+        }
+
+        nav ul li{
+            list-style:none;
+            margin:0 20px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+        }
+
+        nav ul li a:hover{
+            color: rgb(170,107,228);
+        }
+
+        .about-container{
+            width:80%;
+            margin:auto;
+            margin-top:60px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:50px;
+        }
+
+        .about-text{
+            width:60%;
+        }
+
+        .about-text h1{
+            color: rgb(170,107,228);
+            margin-bottom:20px;
+            font-size:40px;
+        }
+
+        .about-text p{
+            line-height:30px;
+            font-size:18px;
+        }
+
+        .skills{
+            margin-top:30px;
+        }
+
+        .skills span{
+            display:inline-block;
+            background-color: rgb(170,107,228);
+            padding:10px 15px;
+            margin:10px;
+            border-radius:20px;
+        }
+
+        .about-image img{
+            width:350px;
+            border-radius:20px;
+        }
+
+
+
+
+
+
+
+        .about-image{
+    position: relative;
+    display: inline-block;
+}
+
+.about-image img{
+    width: 350px;
+    display: block;
+}
+
+/* Bottom Blur Effect */
+
+.about-image::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0),
+        rgb(0,0,33)
+    );
+
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="left">
+            <h2>Rushi Portfolio</h2>
+        </div>
+
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="about-container">
+
+    <div class="about-text">
+
+        <h1>About Me</h1>
+
+        <p>
+            Hello! My name is Rushikesh.
+            I am a passionate Data Analyst and Front-End Developer.
+
+            I enjoy working with Excel, Power BI, SQL,
+            HTML, CSS, and JavaScript.
+
+            I love creating dashboards, analyzing data,
+            and building modern websites.
+        </p>
+
+        <div class="skills">
+            <span>Python</span>
+            <span>Excel</span>
+            <span>Power BI</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+        </div>
+
+    </div>
+
+    <div class="about-image">
+
+        <img src="bg remove photo.png" alt="Photo-Image">
+
+    </div>
+
+</section>
+
+</body>
+</html>
